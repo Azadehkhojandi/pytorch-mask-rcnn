@@ -58,6 +58,7 @@ repository and longcw's [RoiAlign](https://github.com/longcw/RoIAlign.pytorch).
     | GTX 960M | sm_50 |
     | GTX 1070 | sm_61 |
     | GTX 1080 (Ti) | sm_61 |
+    | Tesla K80 | sm_37 |
 
         cd nms/src/cuda/
         nvcc -c -o nms_kernel.cu.o nms_kernel.cu -x cu -Xcompiler -fPIC -arch=[arch]
