@@ -75,6 +75,11 @@ results = model.detect([image])
 
 # Visualize results
 r = results[0]
+print(r['rois'])
+print(r['masks'])
+print(r['class_ids'])
+print(class_names)
+print(r['scores'])
 visualize.display_instances(image, r['rois'], r['masks'], r['class_ids'],
                             class_names, r['scores'])
-plt.show()
+plt.savefig('result.jpg')
